@@ -36,7 +36,7 @@ namespace TearingSimulator2002
             for (int i = 0; i < numberOfTextures; i++)
             {
                 Texture2D noiseTexture = new Texture2D(device, 32, 32);
-                GenerateNoiseMap(textureSize, textureSize, ref noiseTexture, 12);
+                GenerateNoiseMap(textureSize, textureSize , ref noiseTexture, 8);
                 noiseTextures.Add(noiseTexture);
             }
         }
@@ -55,7 +55,7 @@ namespace TearingSimulator2002
             Noise2d.Reseed();
 
             var frequency = 10.0f;
-            var amplitude = 2.0f;
+            var amplitude = 200.0f;
 
             for (var octave = 0; octave < octaves; octave++)
             {

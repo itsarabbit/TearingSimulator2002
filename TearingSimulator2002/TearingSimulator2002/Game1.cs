@@ -14,6 +14,7 @@ namespace TearingSimulator2002
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D noiseMap;
+        Vector2 previousMousePosition, mousePosition;
         List<TearPoint> tearList = new List<TearPoint>(); 
         private float timer = 1.0f;
 
@@ -42,6 +43,8 @@ namespace TearingSimulator2002
 
         protected override void Update(GameTime gameTime)
         {
+            previousMousePosition = mousePosition;
+            mousePosition = Mouse.GetState().Position.ToVector2();
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
             timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -53,7 +56,11 @@ namespace TearingSimulator2002
 
             if (Mouse.GetState().LeftButton == ButtonState.Pressed)
             {
-                tearList.Add(new TearPoint(Mouse.GetState().Position.ToVector2(), NoiseManager.GetNoise()));
+                float distance = (float)Math.Sqrt(((mousePosition.X - previousMousePosition.X) * (mousePosition.X - previousMousePosition.X)) + ((mousePosition.Y - previousMousePosition.Y) * (mousePosition.Y - previousMousePosition.Y)));
+                for(int i = 1; i < distance; i+=2)
+                {
+                    tearList.Add(new TearPoint(previousMousePosition + (Vector2.Normalize(new Vector2((mousePosition.X - previousMousePosition.X), (mousePosition.Y - previousMousePosition.Y))) * i), NoiseManager.GetNoise()));
+                }
             }
 
             for (int i = 0; i < tearList.Count; i++ )
@@ -62,6 +69,7 @@ namespace TearingSimulator2002
                 if (tearList[i].IsDying == true && tearList[i].Progress <= 0)
                 {
                     tearList.RemoveAt(i);
+                    i--;
                 }
             }
 
@@ -72,7 +80,7 @@ namespace TearingSimulator2002
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
             spriteBatch.Begin();
             DrawManager.SetEffect("TearingShader.mgfx");
             Effect effect = DrawManager.LoadEffect("TearingShader.mgfx");
@@ -81,13 +89,12 @@ namespace TearingSimulator2002
             DrawManager.SetEffect(effect);
             spriteBatch.Draw(noiseMap, Vector2.Zero, null, Color.White);
 
-            DrawManager.SetEffect((Effect)null);
 
             foreach (TearPoint tearPoint in tearList)
             {
                 tearPoint.Draw(spriteBatch);
             }
-
+            DrawManager.SetEffect((Effect)null);
             spriteBatch.Draw(noiseMap, new Vector2(32f, 0f), null, Color.White);
 
             spriteBatch.End();

@@ -25,14 +25,14 @@ namespace TearingSimulator2002
         {
             if (IsDying == false)
             {
-                Progress += (float) gameTime.ElapsedGameTime.TotalSeconds;
+                Progress += (float) gameTime.ElapsedGameTime.TotalSeconds * 8;
                 if (Progress >= 1.0)
                 {
                     IsDying = true;
                 }
             }
             else
-                Progress -= (float) gameTime.ElapsedGameTime.TotalSeconds;
+                Progress -= (float) gameTime.ElapsedGameTime.TotalSeconds / 2;
         }       
 
         public void Draw(SpriteBatch spriteBatch)
