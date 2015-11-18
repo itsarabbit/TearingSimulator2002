@@ -36,14 +36,14 @@ namespace TearingSimulator2002
             for (int i = 0; i < numberOfTextures; i++)
             {
                 Texture2D noiseTexture = new Texture2D(device, 32, 32);
-                GenerateNoiseMap(textureSize, textureSize, ref noiseTexture, 8);
+                GenerateNoiseMap(textureSize, textureSize, ref noiseTexture, 12);
                 noiseTextures.Add(noiseTexture);
             }
         }
 
         static void GenerateNoiseMap(int width, int height, ref Texture2D noiseTexture, int octaves)
         {
-            var data = new float[width * height];
+            var data = new float[width*height];
 
             /// track min and max noise value. Used to normalize the result to the 0 to 1.0 range.
             var min = float.MaxValue;
@@ -55,8 +55,7 @@ namespace TearingSimulator2002
             Noise2d.Reseed();
 
             var frequency = 10.0f;
-            var amplitude = 5.0f;
-            var persistence = 0.25f;
+            var amplitude = 2.0f;
 
             for (var octave = 0; octave < octaves; octave++)
             {

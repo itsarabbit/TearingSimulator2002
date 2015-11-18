@@ -25,3 +25,30 @@ C:\Users\stnigu1\Desktop\Nicos folder\Projects\TearingSimulator2002\TearingSimul
 C:\Users\stnigu1\Desktop\Nicos folder\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x86\Debug\TearingSimulator2002.pdb
 C:\Users\stnigu1\Desktop\Nicos folder\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\Content\pixel.png
 C:\Users\stnigu1\Desktop\Nicos folder\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\Content\TearingShader.mgfx
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x86\Debug\TearingSimulator2002.exe
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x86\Debug\TearingSimulator2002.pdb
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\Content\pixel.png
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\Content\TearingShader.mgfx
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\TearingSimulator2002.exe
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\TearingSimulator2002.pdb
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\MonoGame.Framework.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.XAudio2.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct3D11.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.DXGI.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct2D1.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.XInput.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.RawInput.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct3D9.dll
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\MonoGame.Framework.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.XAudio2.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct3D11.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.DXGI.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct2D1.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.XInput.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.RawInput.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\Windows\Debug\SharpDX.Direct3D9.xml
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x86\Debug\TearingSimulator2002.csprojResolveAssemblyReference.cache
