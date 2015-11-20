@@ -24,4 +24,4 @@ E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\Tearin
 E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x64\Debug\TearingSimulator2002.exe
 E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x64\Debug\TearingSimulator2002.pdb
 E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\x64\Debug\Content\TearingShader.mgfx
-E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\bin\x64\Debug\Content\ariblk.ttf
+E:\Users\MyMan\Desktop\Projects\TearingSimulator2002\TearingSimulator2002\TearingSimulator2002\obj\x64\Debug\TearingSimulator2002.csprojResolveAssemblyReference.cache

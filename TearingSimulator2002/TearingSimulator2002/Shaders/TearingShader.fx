@@ -12,14 +12,18 @@ float4 main(float4 position : SV_Position, float4 color : COLOR0, float2 texCoor
 		return color;
 	}
 	dist *= 2.0;
-	dist = 1.0 - dist;
+	dist = 1.0 - dist + 0.3;
 	tex += 0.5;
 
-	float check = dist * dist * (amplification + 0.2) * tex * tex * tex * tex * tex * dist * amplification * amplification;
+	float check = dist * dist * dist * (amplification + 0.2) * tex * tex * tex * dist * amplification * amplification;
 	
 	if(check > 0.5)
 	{
 		color = float4(0.0, 0.0, 0.0, 1.0 * check * 1.2);	
+	}
+	else if (check > 0.4)
+	{
+		color = float4(0.0, 0.0, 0.0, (check - 0.4) * 10.0);
 	}
 	else
 	{

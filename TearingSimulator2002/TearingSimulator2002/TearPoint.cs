@@ -11,6 +11,8 @@ namespace TearingSimulator2002
     {
         public Vector2 Position;
         public Texture2D Texture;
+        public Vector2 scale = new Vector2(4.0f, 4.0f);
+        public float rotation = 0f;
 
         public float Progress = 0;
         public bool IsDying = false;
@@ -19,6 +21,14 @@ namespace TearingSimulator2002
         {
             Position = position;
             Texture = texture;
+        }
+
+        public TearPoint(Vector2 position, Texture2D texture, Vector2 scale, float rotation)
+        {
+            Position = position;
+            Texture = texture;
+            this.scale = scale;
+            this.rotation = rotation;
         }
 
         public void Update(GameTime gameTime)
@@ -38,10 +48,11 @@ namespace TearingSimulator2002
         public void Draw(SpriteBatch spriteBatch)
         {
             Effect effect = DrawManager.LoadEffect("TearingShader.mgfx");
-            effect.Parameters["amplification"].SetValue(Progress);
+
 
             DrawManager.SetEffect(effect);
-            spriteBatch.Draw(Texture, Position, Color.White);
+            spriteBatch.Draw(Texture, Position, null, Color.White, rotation, new Vector2(Texture.Height / 2f, Texture.Width / 2f), scale, SpriteEffects.None, 0f);
+            effect.Parameters["amplification"].SetValue(Progress);
         }
     }
 }

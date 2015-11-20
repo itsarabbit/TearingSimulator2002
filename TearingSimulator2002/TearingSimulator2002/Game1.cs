@@ -14,7 +14,7 @@ namespace TearingSimulator2002
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D noiseMap;
-        Vector2 previousMousePosition, mousePosition;
+        Vector2 previousMousePosition, mousePosition, resolution;
         List<TearPoint> tearList = new List<TearPoint>(); 
         private float timer = 1.0f;
 
@@ -39,6 +39,8 @@ namespace TearingSimulator2002
             shader = Content.Load<Effect>("TearingShader.mgfx");
             noiseMap = NoiseManager.GetNoise();
             DrawManager.Initialize(spriteBatch, Content);
+            resolution.X = GraphicsDevice.Viewport.Width;
+            resolution.Y = GraphicsDevice.Viewport.Height;
         }
 
         protected override void Update(GameTime gameTime)
@@ -59,7 +61,13 @@ namespace TearingSimulator2002
                 float distance = (float)Math.Sqrt(((mousePosition.X - previousMousePosition.X) * (mousePosition.X - previousMousePosition.X)) + ((mousePosition.Y - previousMousePosition.Y) * (mousePosition.Y - previousMousePosition.Y)));
                 for(int i = 1; i < distance; i+=2)
                 {
-                    tearList.Add(new TearPoint(previousMousePosition + (Vector2.Normalize(new Vector2((mousePosition.X - previousMousePosition.X), (mousePosition.Y - previousMousePosition.Y))) * i), NoiseManager.GetNoise()));
+                    Vector2 position = previousMousePosition +
+                                       (Vector2.Normalize(new Vector2((mousePosition.X - previousMousePosition.X),
+                                           (mousePosition.Y - previousMousePosition.Y)))*i);
+                    float angle =
+                        (float)Math.Atan2(position.Y - resolution.Y / 2f, position.X - resolution.X / 2f);
+                    tearList.Add(new TearPoint(position, NoiseManager.GetNoise(),
+                        new Vector2(1.0f, 2.0f), angle));
                 }
             }
 
